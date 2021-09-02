@@ -31,7 +31,6 @@ export function HomeBanner() {
                 <Text 
                     color="gray.100"
                     fontWeight="400"
-                    fontWight="normal"
                     fontSize=".75rem"
                     mt=".5rem">
                     Chegou a hora de tirar do papel a viagem que {<br/>} você sempre sonhou
