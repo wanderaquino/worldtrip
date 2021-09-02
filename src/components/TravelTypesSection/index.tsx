@@ -1,17 +1,58 @@
-import { Flex, List, ListItem, ListIcon, Grid, GridItem, Icon, Box, useBreakpointValue} from "@chakra-ui/react";
+import { Flex, Img, Text, Grid, GridItem, Icon, Box, useBreakpointValue} from "@chakra-ui/react";
 import {BsFillCircleFill} from "react-icons/bs";
 
-export function TravelTypesSection() {
+interface TravelTypesProps {
+    nightTravelText: string,
+    beachTravelText: string,
+    modernTravelText: string,
+    classicTravelText: string,
+    restTravelText: string
+}
+export function TravelTypesSection({
+    nightTravelText, 
+    beachTravelText, 
+    modernTravelText, 
+    classicTravelText,
+    restTravelText} : TravelTypesProps) {
     const isWideScreen = useBreakpointValue({
         base: false,
         lg: true
     })
 
     return (
-        isWideScreen ? (<h1>Hello!</h1> ) : (
+        isWideScreen ? (
             <Flex 
             as="section"
             w="100%"
+            mt="4rem"
+            justifyContent="space-between"
+            px={["1rem","7rem"]}>
+                <Flex flexDirection="column">
+                    <Img h="4rem" src="/images/Cocktail.svg"/>
+                    <Text mt="1rem">{nightTravelText}</Text>
+                </Flex>
+                <Flex flexDirection="column" alignItems="center">
+                    <Img h="4rem" src="/images/Surf.svg"/>
+                    <Text mt="1rem">{beachTravelText}</Text>
+                </Flex>
+                <Flex flexDirection="column" alignItems="center">
+                    <Img h="4rem" src="/images/Predio.svg"/>
+                    <Text mt="1rem">{modernTravelText}</Text>
+                </Flex>
+                <Flex flexDirection="column" alignItems="center">
+                    <Img h="4rem" src="/images/Museu.svg"/>
+                    <Text mt="1rem">{classicTravelText}</Text>
+                </Flex>
+                <Flex flexDirection="column" alignItems="center">
+                    <Img h="4rem" src="/images/Mundo.svg"/>
+                    <Text mt="1rem">{restTravelText}</Text>
+                </Flex>
+            </Flex>
+        ) : (
+            <Flex 
+            as="section"
+            w="100%"
+            mt="2rem"
             px={["1rem","7rem"]}>
             <Flex w="inherit">
                 <Grid w="inherit" templateColumns="repeat(2, 1fr)" gap={2}>
@@ -26,7 +67,7 @@ export function TravelTypesSection() {
                                 as={BsFillCircleFill} 
                                 color="#FFBA08" 
                                 height=".6rem"/> 
-                                vida noturna
+                                {nightTravelText}
                         </Box>
 
                         <Box>
@@ -34,7 +75,7 @@ export function TravelTypesSection() {
                                 as={BsFillCircleFill} 
                                 color="#FFBA08" 
                                 height=".6rem"/> 
-                                praia
+                                {beachTravelText}
                         </Box>
 
                     </GridItem>
@@ -51,7 +92,7 @@ export function TravelTypesSection() {
                                 as={BsFillCircleFill} 
                                 color="#FFBA08" 
                                 height=".6rem"/> 
-                                moderno
+                                {modernTravelText}
                         </Box>
 
                         <Box>
@@ -59,7 +100,7 @@ export function TravelTypesSection() {
                                 as={BsFillCircleFill} 
                                 color="#FFBA08" 
                                 height=".6rem"/> 
-                                clássico
+                                {classicTravelText}
                         </Box>
                     </GridItem>
 
@@ -74,7 +115,7 @@ export function TravelTypesSection() {
                                 as={BsFillCircleFill} 
                                 color="#FFBA08" 
                                 height=".6rem"/> 
-                                e mais...
+                                {restTravelText}
                         </Box>
                     </GridItem>
                 </Grid>
