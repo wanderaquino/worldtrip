@@ -8,9 +8,12 @@ export default function Home() {
     <>
     <Header />
     <HomeBanner />
-    <Box mt="2rem">
-      <TravelTypesSection/>
-    </Box>
+    <TravelTypesSection
+      nightTravelText="vida noturna"
+      beachTravelText="praia"
+      modernTravelText="moderno"
+      classicTravelText="clássico"
+      restTravelText="e mais..."/>
     </>
   )
 }
