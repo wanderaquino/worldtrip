@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import { Header } from "../components/Header";
 import { HomeBanner } from "../components/HomeBanner";
+import { PageDivider } from "../components/PageDivider";
 import { TravelTypesSection } from "../components/TravelTypesSection";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       modernTravelText="moderno"
       classicTravelText="clássico"
       restTravelText="e mais..."/>
+      <PageDivider />
     </>
   )
 }
