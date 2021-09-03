@@ -37,11 +37,12 @@ export function HomeBanner() {
                 </Text>
             </Flex>
             {isWideScreen && (
-            <Flex position="relative" bottom={-70}>
+            <Flex>
                 <Img 
                     src="/images/Airplane.svg" 
                     alt="Avião do Banner representando viagem"
                     height="12rem"
+                    position="relative" bottom={-70}
                     >
                 </Img>
             </Flex>
