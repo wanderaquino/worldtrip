@@ -53,7 +53,7 @@ export function TravelTypesSection({
             as="section"
             w="100%"
             m="1rem 0"
-            px="3.125rem">
+            px="2rem">
             <Flex w="inherit">
                 <Grid w="inherit" templateColumns="repeat(2, 1fr)" gap={2}>
                     <GridItem 
