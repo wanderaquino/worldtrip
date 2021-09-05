@@ -11,7 +11,7 @@ export function HomeBanner() {
         <Flex 
             w="100%"
             background="linear-gradient(207deg, rgba(2,0,36,1) 46%, rgba(2,20,54,1) 51%, rgba(10,67,79,1) 93%)"
-            height="15rem"
+            height="12rem"
             px={["1rem","7rem"]}
             justify="space-between"
             >
