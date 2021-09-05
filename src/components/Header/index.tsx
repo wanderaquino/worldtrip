@@ -9,7 +9,7 @@ export function Header () {
             alignItems="center" 
             justifyContent="center"
             marginX="auto"
-            height="60px"
+            height="4rem"
             >
             <Logo />
         </Flex>
