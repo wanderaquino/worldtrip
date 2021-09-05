@@ -8,7 +8,7 @@ export function ContinentsSection () {
             as="section" 
             w="100%"
             h="3rem"
-            mt="2rem"
+            mt="4rem"
             px={["1rem","7rem"]}
             justify="center"
         >       

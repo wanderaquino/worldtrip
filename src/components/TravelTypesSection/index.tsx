@@ -24,9 +24,9 @@ export function TravelTypesSection({
             <Flex 
             as="section"
             w="100%"
-            m="2rem 0"
+            m="4rem 0"
             justifyContent="space-between"
-            px="10.75rem">
+            px={["1rem", "7rem"]}>
                 <Flex flexDirection="column">
                     <Img h="4rem" src="/images/Cocktail.svg"/>
                     <Text mt="1rem">{nightTravelText}</Text>
@@ -52,8 +52,8 @@ export function TravelTypesSection({
             <Flex 
             as="section"
             w="100%"
-            m="1rem 0"
-            px="2rem">
+            m="3rem 0"
+            px={["1rem", "7rem"]}>
             <Flex w="inherit">
                 <Grid w="inherit" templateColumns="repeat(2, 1fr)" gap={2}>
                     <GridItem 
