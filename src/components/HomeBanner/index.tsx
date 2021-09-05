@@ -42,7 +42,7 @@ export function HomeBanner() {
                     src="/images/Airplane.svg" 
                     alt="Avião do Banner representando viagem"
                     height="12rem"
-                    position="relative" bottom={-70}
+                    position="relative" bottom={-5}
                     >
                 </Img>
             </Flex>
