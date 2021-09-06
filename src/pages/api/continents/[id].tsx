@@ -1,9 +1,10 @@
+import { NextApiRequest, NextApiResponse } from "next";
 import continents from "../../../../db.json"
 
-export default function Continents (request, response) {
-    const queryId = parseInt(request.query.id);
+export default function Continents (request : NextApiRequest, response: NextApiResponse) {
+    const queryId = request.query.id;
     const continent = continents.find(
-        continent => continent.id === queryId
+        continent => continent.id.toString() === queryId
     );
 
     if(request.method === "GET") {
