@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "name": "Europa",
+        "shortDescription": "O continente mais antigo",
+        "about": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+        "city": [
+            {
+                "name": "Londres",
+                "country": "Reino Unido"
+            },
+            {
+                "name": "Paris",
+                "country": "França"
+            },
+            {
+                "name": "Roma",
+                "country": "Itália"
+            },
+            {
+                "name": "Praga",
+                "country": "República Tcheca"
+            },
+            {
+                "name": "Amsterdã",
+                "country": "Holanda"
+            }
+        ],
+        "demographicData": {
+            "countries": 50,
+            "languages": 60,
+            "citiesPlus": 27
+        }
+    },
+    {
+        "id": 2,
+        "name": "África",
+        "shortDescription": "O continente mais extenso",
+        "about": "A África é o terceiro continente mais extenso (depois da Ásia e da América) com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas, representando cerca de um sétimo da população mundial, e 54 países independentes. Tem se transformado na ultima década em uma continente cada vez mais católico.",
+        "city": [
+            {
+                "name": "Ganvié",
+                "country": "Benin"
+            },
+            {
+                "name": "Kolmanskop,",
+                "country": "Namíbia"
+            },
+            {
+                "name": "Ilha do Sol",
+                "country": "Cabo Verde"
+            }
+        ],
+        "demographicData": {
+            "countries": 50,
+            "languages": 60,
+            "citiesPlus": 27
+        }
+    }
+]
