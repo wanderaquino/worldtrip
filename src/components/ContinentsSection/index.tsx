@@ -1,5 +1,4 @@
 import { Flex, Heading } from "@chakra-ui/react";
-import ContinentSwiper from "./ContinentsSwiper";
 
 export function ContinentsSection () {
     return (
@@ -25,7 +24,6 @@ export function ContinentsSection () {
                 </Heading>
             </Flex>
         </Flex>
-        <ContinentSwiper />
     </>
     )
 }
