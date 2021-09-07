@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import Head from "next/head";
 import { ContinentsSection } from "../components/ContinentsSection";
 import { Header } from "../components/Header";
 import { HomeBanner } from "../components/HomeBanner";
