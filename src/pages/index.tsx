@@ -5,7 +5,17 @@ import { HomeBanner } from "../components/HomeBanner";
 import { PageDivider } from "../components/PageDivider";
 import { TravelTypesSection } from "../components/TravelTypesSection";
 
-export default function Home() {
+
+interface HomeContinentProps {
+  continents: {
+    id: number,
+    name: string,
+    shortDescription: string,
+    image: string
+  }[]
+}
+
+export default function Home({continents}: HomeContinentProps) {
   return (
     <>
     <Head>
