@@ -8,6 +8,9 @@ import { TravelTypesSection } from "../components/TravelTypesSection";
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>WorldTrip | Home</title>
+    </Head>
     <Header />
     <HomeBanner />
     <TravelTypesSection
