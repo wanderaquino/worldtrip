@@ -32,14 +32,14 @@ export default function ContinentSwiper({continents} : SwiperContinentProps) {
                         return (
                         <SwiperSlide key={continent.id}>
                             <Box position="absolute" w="100%" h="100%" bg="rgba(0,0,0,0.6)"/>
-                            <Flex
-                                justify="center" 
-                                alignItems="center" 
-                                w="100%" 
-                                h="100%"
-                                >
-                                <Img src={continent.image} />
-                            <SwiperText headerText={continent.name} subText={continent.shortDescription} />
+                                <Flex
+                                    justify="center" 
+                                    alignItems="center" 
+                                    w="100%" 
+                                    h="100%"
+                                    >
+                                    <Img src={continent.image} />
+                                <SwiperText href={`/continent/${continent.id}`} headerText={continent.name} subText={continent.shortDescription} />
                             </Flex>
                         </SwiperSlide>
                         )
