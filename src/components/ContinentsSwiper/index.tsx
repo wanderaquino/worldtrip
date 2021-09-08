@@ -39,7 +39,9 @@ export default function ContinentSwiper({continents} : SwiperContinentProps) {
                                     h="100%"
                                     >
                                     <Img src={continent.image} />
-                                <SwiperText href={`/continent/${continent.id}`} headerText={continent.name} subText={continent.shortDescription} />
+                                <SwiperText href={`/continent/${continent.id}`} 
+                                    headerText={continent.name} 
+                                    subText={continent.shortDescription} />
                             </Flex>
                         </SwiperSlide>
                         )
