@@ -20,7 +20,7 @@ export function Header ({isContinentPage = false} : HeaderProps) {
             marginX="auto"
             justify="flex-start"
             height="4rem"
-            position="relative"
+            px={["1rem", "3rem"]}
             >
                 <Box 
                     position="absolute" 
