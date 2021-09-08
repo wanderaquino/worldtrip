@@ -18,8 +18,7 @@ export function Header ({isContinentPage = false} : HeaderProps) {
             maxW="1440px" 
             align="center" 
             marginX="auto"
-            justify="center"
-            justifyContent="center"
+            justify="flex-start"
             height="4rem"
             position="relative"
             >
