@@ -22,11 +22,7 @@ export function Header ({isContinentPage = false} : HeaderProps) {
             height="4rem"
             px={["1rem", "3rem"]}
             >
-                <Box 
-                    position="absolute" 
-                    left={0}
-                    mx={["2rem", "2rem", "2rem", "2rem", "0"]}
-                    >
+                <Box flex={.7}>
                     <PreviousButton />
                 </Box>
                 <Box>
