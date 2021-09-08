@@ -1,5 +1,5 @@
 import Head from "next/head"
-import {Flex, Img, Box, Heading} from "@chakra-ui/react";
+import {Flex, Img, Box, Heading, Text, Grid, GridItem}from "@chakra-ui/react";
 import { Header } from "../../components/Header"
 
 export default function Continent () {
@@ -31,6 +31,46 @@ export default function Continent () {
                 </Heading>
             </Box>
 
+        </Flex>
+        <Flex 
+            as="section"
+            w="100%" 
+            h="15rem"
+            mx="auto"
+            my={["1.5rem","2rem"]}
+            >
+            
+            <Flex
+                px={["1rem", "3rem"]}>
+                
+                <Grid templateColumns="repeat(2, 1fr)" gridColumnGap={5}>
+                    <GridItem ScolSpan={1} my="auto">
+                        <Text textAlign="justify">
+                        A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.
+                        </Text>
+                    </GridItem>
+
+                    <GridItem ScolSpan={1} m="auto auto">
+                        <Flex justifyContent="space-between" w="20rem">
+                            <Flex flexDirection="column">
+                                <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >50</Text>
+                                <Text>países</Text>
+                            </Flex>
+
+                            <Flex flexDirection="column">
+                                <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >30</Text>
+                                <Text>línguas</Text>
+                            </Flex>
+
+                            <Flex flexDirection="column">
+                                <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >27</Text>
+                                <Text>cidades +100</Text>
+                            </Flex>
+                        </Flex>
+                    </GridItem>
+
+                </Grid>
+            </Flex>
         </Flex>
     </>
     )
