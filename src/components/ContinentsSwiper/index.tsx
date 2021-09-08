@@ -17,7 +17,7 @@ export default function ContinentSwiper({continents} : SwiperContinentProps) {
         <Flex
         w="100%"
         h="15rem"
-        mt="1rem"
+        m="1rem 0"
         px={["0", "7rem"]}
         justify="center">
             <Swiper
