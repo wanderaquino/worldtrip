@@ -1,7 +1,6 @@
 import Head from "next/head"
-import {Flex, Img} from "@chakra-ui/react";
+import {Flex, Img, Box, Heading} from "@chakra-ui/react";
 import { Header } from "../../components/Header"
-import { urlObjectKeys } from "next/dist/shared/lib/utils";
 
 export default function Continent () {
     return (
