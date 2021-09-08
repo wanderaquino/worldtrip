@@ -1,6 +1,7 @@
 import Head from "next/head"
 import {Flex, Img} from "@chakra-ui/react";
 import { Header } from "../../components/Header"
+import { urlObjectKeys } from "next/dist/shared/lib/utils";
 
 export default function Continent () {
     return (
@@ -15,7 +16,10 @@ export default function Continent () {
             h="20rem"
             mx="auto">
             <Img 
-                href="/images/Europe.jpg" />
+                w="inherit"
+                h="inherit"
+                src="/images/Europe.jpg" 
+                objectFit="cover"/>
         </Flex>
     </>
     )
