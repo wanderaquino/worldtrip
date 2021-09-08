@@ -23,7 +23,11 @@ export function Header ({isContinentPage = false} : HeaderProps) {
             height="4rem"
             position="relative"
             >
-                <Box position="absolute" left={0}>
+                <Box 
+                    position="absolute" 
+                    left={0}
+                    mx={["2rem", "2rem", "2rem", "2rem", "0"]}
+                    >
                     <PreviousButton />
                 </Box>
                 <Box>
