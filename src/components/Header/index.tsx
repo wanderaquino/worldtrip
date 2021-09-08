@@ -25,8 +25,8 @@ export function Header ({isContinentPage = false} : HeaderProps) {
                 <Box flex={.7}>
                     <PreviousButton />
                 </Box>
-                <Box>
-                    <Logo />
+                <Box flex={1}>
+                    <Logo /> 
                 </Box>
         </Flex>) 
         
