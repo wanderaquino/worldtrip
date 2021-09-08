@@ -15,7 +15,7 @@ export function Header ({isContinentPage = false} : HeaderProps) {
         <Flex 
             as="header" 
             w="100%" 
-            maxW="1260px" 
+            maxW="1440px" 
             align="center" 
             marginX="auto"
             justify="center"
