@@ -5,7 +5,8 @@ import { Header } from "../../components/Header"
 export default function Continent () {
 
     const isWideScreen = useBreakpointValue({
-        md: true
+        base: false,
+        lg: true
     });
     
     return (
