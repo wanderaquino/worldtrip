@@ -18,32 +18,34 @@ export default function Continent () {
 
         {
             !isWideScreen ? (
-            <Flex
-                w="100%" 
-                h="20rem"
-                mx="auto"
-                position="relative"
-                alignItems="center"
-                justifyContent="center">
-
-                <Box w="100%" h="100%" bg="rgb(0,0,0, 0.6)" position="absolute"/>
-                <Img w="100%" maxW="inherit" h="100%" src="/images/Europe.jpg" objectFit="cover"/>
-                <Flex 
+            <>
+                <Flex
                     w="100%" 
-                    h="100%" 
-                    px={["1rem", "5rem"]}
-                    py={["0", "2.5rem"]}
-                    position="absolute" 
+                    h="20rem"
+                    mx="auto"
+                    position="relative"
                     alignItems="center"
                     justifyContent="center">
-                    <Box>
-                        <Heading
-                            color="white"
-                            fontWeight="700"
-                            fontSize="2rem"
-                            >Europa
-                        </Heading>
-                    </Box>
+
+                    <Box w="100%" h="100%" bg="rgb(0,0,0, 0.6)" position="absolute"/>
+                    <Img w="100%" maxW="inherit" h="100%" src="/images/Europe.jpg" objectFit="cover"/>
+                    <Flex 
+                        w="100%" 
+                        h="100%" 
+                        px={["1rem", "5rem"]}
+                        py={["0", "2.5rem"]}
+                        position="absolute" 
+                        alignItems="center"
+                        justifyContent="center">
+                        <Box>
+                            <Heading
+                                color="white"
+                                fontWeight="700"
+                                fontSize="2rem"
+                                >Europa
+                            </Heading>
+                        </Box>
+                    </Flex>
                 </Flex>
             </Flex>
             ) : (
