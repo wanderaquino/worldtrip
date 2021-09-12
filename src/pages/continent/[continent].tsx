@@ -123,8 +123,6 @@ export default function Continent () {
             <>
                 <Flex
                     w="100%" 
-                w="100%" 
-                    w="100%" 
                     h="20rem"
                     mx="auto"
                     position="relative"
@@ -132,18 +130,10 @@ export default function Continent () {
                     <Box w="100%" h="100%" bg="rgb(0,0,0, 0.6)" position="absolute"/>
                     <Img w="100%" maxW="inherit" h="100%" src="/images/Europe.jpg" objectFit="cover"/>
                     <Flex 
-                <Flex 
-                    <Flex 
                         w="100%" 
-                    w="100%" 
-                        w="100%" 
-                        h="100%" 
-                    h="100%" 
                         h="100%" 
                         px={["1rem", "5rem"]}
                         py={["0", "2.5rem"]}
-                        position="absolute" 
-                    position="absolute" 
                         position="absolute" 
                         alignItems="flex-end">
                         <Box>
@@ -157,11 +147,7 @@ export default function Continent () {
                     </Flex>
                 </Flex>
                 <Flex 
-        <Flex 
-                <Flex 
                     as="section"
-                    w="100%" 
-            w="100%" 
                     w="100%" 
                     h="14rem"
                     mx="auto"
