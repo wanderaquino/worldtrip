@@ -64,8 +64,8 @@ export default function Continent () {
                                 </Text>
                             </GridItem>
 
-                            <GridItem mx="auto" my="1.5rem" >
-                                <Flex justifyContent="space-between" w="20rem">
+                            <GridItem mx="auto" my="1.5rem" w="100%">
+                                <Flex justifyContent="space-between">
                                     <Flex flexDirection="column">
                                         <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >50</Text>
                                         <Text>países</Text>
