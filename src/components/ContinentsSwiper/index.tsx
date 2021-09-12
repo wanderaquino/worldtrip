@@ -5,7 +5,7 @@ import { SwiperText } from "../ContinentsSection/SwiperText";
 
 interface SwiperContinentProps {
     continents: {
-      id: number,
+      id: string,
       name: string,
       shortDescription: string,
       image: string

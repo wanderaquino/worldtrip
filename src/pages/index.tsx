@@ -10,7 +10,7 @@ import ContinentSwiper from "../components/ContinentsSwiper";
 
 interface HomeContinentProps {
   continents: {
-    id: number,
+    id: string,
     name: string,
     shortDescription: string,
     image: string
