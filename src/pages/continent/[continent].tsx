@@ -188,41 +188,19 @@ export default function Continent () {
                     <Grid my="1.5rem" templateColumns="repeat(4, 1fr)" gap={5} >
                         <GridItem>
                             <Flex 
-                    <Flex 
-                            <Flex 
-                                flexDir="column"  
-                        flexDir="column"  
                                 flexDir="column"  
                                 overflow="hidden"
-                                borderRadius=".2rem" 
-                        borderRadius=".2rem" 
                                 borderRadius=".2rem" 
                                 w="240px">
         
                                 <Img src="/images/UnitedKing.png"/>
                                 <Flex 
-                        <Flex 
-                                <Flex 
-                                    flexDir="row" 
-                            flexDir="row" 
                                     flexDir="row" 
                                     justifyContent="space-between" 
-                            justifyContent="space-between" 
-                                    justifyContent="space-between" 
-                                    alignItems="center" 
-                            alignItems="center" 
                                     alignItems="center" 
                                     padding="1rem" 
-                            padding="1rem" 
-                                    padding="1rem" 
-                                    border="solid" 
-                            border="solid" 
                                     border="solid" 
                                     borderWidth=".1rem" 
-                            borderWidth=".1rem" 
-                                    borderWidth=".1rem" 
-                                    borderColor="rgba(255, 186, 8, 0.5)" 
-                            borderColor="rgba(255, 186, 8, 0.5)" 
                                     borderColor="rgba(255, 186, 8, 0.5)" 
                                     borderTop="none">
         
