@@ -87,12 +87,12 @@ export default function Continent () {
                 </Flex>
                 <Flex as="section" px={["1rem", "5rem"]} flexDir="column" my="1.5rem">
                     <Heading fontSize="2rem" fontWeight="600">Cidades +100</Heading>
-                    <Grid my="1.5rem" templateColumns="repeat(4, 1fr)" gap={5} >
+                    <Grid my="1.5rem" templateColumns="1" gridRowGap={5} mx="auto">
                         <GridItem>
                             <Flex 
-                                flexDir="column"  
+                                flexDir="column"
                                 overflow="hidden"
-                                borderRadius=".2rem" 
+                                borderRadius=".2rem"
                                 w="240px">
 
                                 <Img src="/images/UnitedKing.png"/>
