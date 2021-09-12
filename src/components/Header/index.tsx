@@ -20,7 +20,7 @@ export function Header ({isContinentPage = false} : HeaderProps) {
             marginX="auto"
             justify="flex-start"
             height="4rem"
-            px={["1rem", "3rem"]}
+            px={["1rem", "5rem"]}
             >
                 <Box flex={.7}>
                     <PreviousButton />
