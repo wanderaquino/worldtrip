@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "euro",
         "name": "Europa",
         "shortDescription": "O continente mais antigo",
         "image": "/images/Europe.jpg",
@@ -34,7 +34,7 @@
         }
     },
     {
-        "id": 2,
+        "id": "africa",
         "name": "África",
         "shortDescription": "O continente mais extenso",
         "image": "/images/Africa.jpg",
