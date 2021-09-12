@@ -5,7 +5,7 @@
         "shortDescription": "O continente mais antigo",
         "image": "/images/Europe.jpg",
         "about": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
-        "city": [
+        "cities": [
             {
                 "name": "Londres",
                 "country": "Reino Unido",
@@ -16,7 +16,7 @@
         "demographicData": {
             "countries": 50,
             "languages": 60,
-            "citiesPlus": 27
+            "citiesPlus": 1
         }
     },
     {
@@ -25,7 +25,7 @@
         "shortDescription": "O continente mais extenso",
         "image": "/images/Africa.jpg",
         "about": "A África é o terceiro continente mais extenso (depois da Ásia e da América) com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas, representando cerca de um sétimo da população mundial, e 54 países independentes. Tem se transformado na ultima década em uma continente cada vez mais católico.",
-        "city": [
+        "cities": [
             {
                 "name": "Ganvié",
                 "country": "Benin",
@@ -48,7 +48,7 @@
         "demographicData": {
             "countries": 50,
             "languages": 60,
-            "citiesPlus": 27
+            "citiesPlus": 3
         }
     }
 ]
