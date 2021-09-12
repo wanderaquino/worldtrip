@@ -2,7 +2,29 @@ import Head from "next/head"
 import {Flex, Img, Box, Heading, Text, Grid, GridItem, useBreakpointValue}from "@chakra-ui/react";
 import { Header } from "../../components/Header"
 
-export default function Continent () {
+
+interface ContinentProps {
+    continent: {
+        id: string,
+        name: string,
+        image: string,
+        about: string,
+        demographicData: {
+            countries: number,
+            languages: number,
+            citiesPlus: number
+        }
+        cities: {
+            name: string,
+            country: string,
+            cityImage: string,
+            countryFlagImage: string
+        }[]
+    }
+}
+
+
+export default function Continent ({continent} : ContinentProps) {
 
     const isWideScreen = useBreakpointValue({
         base: false,
