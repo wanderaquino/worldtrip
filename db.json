@@ -8,23 +8,9 @@
         "city": [
             {
                 "name": "Londres",
-                "country": "Reino Unido"
-            },
-            {
-                "name": "Paris",
-                "country": "França"
-            },
-            {
-                "name": "Roma",
-                "country": "Itália"
-            },
-            {
-                "name": "Praga",
-                "country": "República Tcheca"
-            },
-            {
-                "name": "Amsterdã",
-                "country": "Holanda"
+                "country": "Reino Unido",
+                "cityImage": "/images/UnitedKing.png",
+                "countryFlagImage": "/images/EnglandFlag.png"
             }
         ],
         "demographicData": {
