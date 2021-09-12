@@ -42,15 +42,21 @@
         "city": [
             {
                 "name": "Ganvié",
-                "country": "Benin"
+                "country": "Benin",
+                "cityImage": "/images/Ganv.jpeg",
+                "countryFlagImage": "/images/BeninFlag.png"
             },
             {
-                "name": "Kolmanskop,",
-                "country": "Namíbia"
+                "name": "Kolmanskop",
+                "country": "Namíbia",
+                "cityImage": "/images/Kolman.jpeg",
+                "countryFlagImage": "/images/NamibiaFlag.png"
             },
             {
                 "name": "Ilha do Sol",
-                "country": "Cabo Verde"
+                "country": "Cabo Verde",
+                "cityImage": "/images/IslandSun.jpeg",
+                "countryFlagImage": "/images/CapeVerdeFlag.png"
             }
         ],
         "demographicData": {
