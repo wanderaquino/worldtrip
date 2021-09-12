@@ -36,7 +36,7 @@ export default function Continent ({continent} : ContinentProps) {
     return (
     <>
         <Head>
-            <title>WorldTrip | Home</title>
+            <title>WorldTrip | {`${continent.name}`}</title>
         </Head>
         <Header isContinentPage={true}/>
 
@@ -52,7 +52,7 @@ export default function Continent ({continent} : ContinentProps) {
                     justifyContent="center">
 
                     <Box w="100%" h="100%" bg="rgb(0,0,0, 0.6)" position="absolute"/>
-                    <Img w="100%" maxW="inherit" h="100%" src="/images/Europe.jpg" objectFit="cover"/>
+                    <Img w="100%" maxW="inherit" h="100%" src={continent.image} objectFit="cover"/>
                     <Flex 
                         w="100%" 
                         h="100%" 
@@ -65,8 +65,8 @@ export default function Continent ({continent} : ContinentProps) {
                             <Heading
                                 color="white"
                                 fontWeight="700"
-                                fontSize="2rem"
-                                >Europa
+                                fontSize="2rem">
+                                    {continent.name}
                             </Heading>
                         </Box>
                     </Flex>
@@ -82,24 +82,24 @@ export default function Continent ({continent} : ContinentProps) {
                         <Grid templateColumns="1">
                             <GridItem my="auto">
                                 <Text textAlign="justify" fontSize=".875rem">
-                                A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.
+                                {continent.about}
                                 </Text>
                             </GridItem>
 
                             <GridItem mx="auto" my="1.5rem" w="100%">
                                 <Flex justifyContent="space-between">
                                     <Flex flexDirection="column">
-                                        <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >50</Text>
+                                        <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >{continent.demographicData.countries}</Text>
                                         <Text>países</Text>
                                     </Flex>
 
                                     <Flex flexDirection="column">
-                                        <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >30</Text>
+                                        <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >{continent.demographicData.languages}</Text>
                                         <Text>línguas</Text>
                                     </Flex>
 
                                     <Flex flexDirection="column">
-                                        <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >27</Text>
+                                        <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >{continent.demographicData.citiesPlus}</Text>
                                         <Text>cidades +100</Text>
                                     </Flex>
                                 </Flex>
@@ -110,14 +110,15 @@ export default function Continent ({continent} : ContinentProps) {
                 <Flex as="section" px={["1rem", "5rem"]} flexDir="column" my="1.5rem">
                     <Heading fontSize="2rem" fontWeight="600">Cidades +100</Heading>
                     <Grid my="1.5rem" templateColumns="1" gridRowGap={5} mx="auto">
-                        <GridItem>
+                    {continent.cities.map(city => (
+                        <GridItem key={city.name}>
                             <Flex 
                                 flexDir="column"
                                 overflow="hidden"
                                 borderRadius=".2rem"
                                 w="240px">
 
-                                <Img src="/images/UnitedKing.png"/>
+                                <Img src={city.cityImage}/>
                                 <Flex 
                                     flexDir="row" 
                                     justifyContent="space-between" 
@@ -129,17 +130,18 @@ export default function Continent ({continent} : ContinentProps) {
                                     borderTop="none">
 
                                     <Flex flexDir="column">
-                                        <Heading as="h2" fontSize="1.25rem">Londres</Heading>
-                                        <Text fontWeight="normal" mt=".5rem" fontSize="1rem" color="#999999">Reino Unido</Text>
+                                        <Heading as="h2" fontSize="1.25rem">{city.name}</Heading>
+                                        <Text fontWeight="normal" mt=".5rem" fontSize="1rem" color="#999999">{city.country}</Text>
                                     </Flex>
                                     <Flex my="1.5rem">
                                         <Box borderRadius="100%" w="2.5rem" h="2.5rem">
-                                            <Img src="/images/EnglandFlag.png" w="2.5rem" h="2.5rem" objectFit="fill" />
+                                            <Img src={city.countryFlagImage} w="2.5rem" h="2.5rem" objectFit="fill" />
                                         </Box>
                                     </Flex>
                                 </Flex>
                             </Flex>
                         </GridItem>
+                    ))}
                     </Grid>
                 </Flex>
             </>
@@ -152,7 +154,7 @@ export default function Continent ({continent} : ContinentProps) {
                     position="relative"
                     >
                     <Box w="100%" h="100%" bg="rgb(0,0,0, 0.6)" position="absolute"/>
-                    <Img w="100%" maxW="inherit" h="100%" src="/images/Europe.jpg" objectFit="cover"/>
+                    <Img w="100%" maxW="inherit" h="100%" src={continent.image} objectFit="cover"/>
                     <Flex 
                         w="100%" 
                         h="100%" 
@@ -164,8 +166,8 @@ export default function Continent ({continent} : ContinentProps) {
                             <Heading
                                 color="white"
                                 fontWeight="700"
-                                fontSize="2rem"
-                                >Europa
+                                fontSize="2rem">
+                                    {continent.name}
                             </Heading>
                         </Box>
                     </Flex>
@@ -182,24 +184,24 @@ export default function Continent ({continent} : ContinentProps) {
                         <Grid templateColumns="repeat(2, 1fr)" gridColumnGap={5}>
                             <GridItem colSpan={1} my="auto">
                                 <Text textAlign="justify">
-                                A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.
+                                {continent.about}
                                 </Text>
                             </GridItem>
         
                             <GridItem colSpan={1} m="auto auto">
                                 <Flex justifyContent="space-between" w="20rem">
                                     <Flex flexDirection="column">
-                                        <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >50</Text>
+                                        <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >{continent.demographicData.countries}</Text>
                                         <Text>países</Text>
                                     </Flex>
         
                                     <Flex flexDirection="column">
-                                        <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >30</Text>
+                                        <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >{continent.demographicData.languages}</Text>
                                         <Text>línguas</Text>
                                     </Flex>
         
                                     <Flex flexDirection="column">
-                                        <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >27</Text>
+                                        <Text textAlign="center" fontSize="2rem" color="#FFBA08" fontWeight="600" >{continent.demographicData.citiesPlus}</Text>
                                         <Text>cidades +100</Text>
                                     </Flex>
                                 </Flex>
@@ -210,14 +212,15 @@ export default function Continent ({continent} : ContinentProps) {
                 <Flex as="section" px={["1rem", "5rem"]} flexDir="column" my="1.5rem">
                     <Heading fontSize="2rem" fontWeight="600">Cidades +100</Heading>
                     <Grid my="1.5rem" templateColumns="repeat(4, 1fr)" gap={5} >
-                        <GridItem>
+                        {continent.cities.map(city => (
+                        <GridItem key={city.name}>
                             <Flex 
                                 flexDir="column"  
                                 overflow="hidden"
                                 borderRadius=".2rem" 
                                 w="240px">
         
-                                <Img src="/images/UnitedKing.png"/>
+                                <Img src={city.cityImage}/>
                                 <Flex 
                                     flexDir="row" 
                                     justifyContent="space-between" 
@@ -229,17 +232,19 @@ export default function Continent ({continent} : ContinentProps) {
                                     borderTop="none">
         
                                     <Flex flexDir="column">
-                                        <Heading as="h2" fontSize="1.25rem">Londres</Heading>
-                                        <Text fontWeight="normal" mt=".5rem" fontSize="1rem" color="#999999">Reino Unido</Text>
+                                        <Heading as="h2" fontSize="1.25rem">{city.name}</Heading>
+                                        <Text fontWeight="normal" mt=".5rem" fontSize="1rem" color="#999999">{city.country}</Text>
                                     </Flex>
                                     <Flex my="1.5rem">
-                                        <Box borderRadius="100%" w="2.5rem" h="2.5rem">
-                                            <Img src="/images/EnglandFlag.png" w="2.5rem" h="2.5rem" objectFit="fill" />
+                                        <Box borderRadius="100%" w="2.5rem" h="2.5rem" overflow="hidden">
+                                            <Img src={city.countryFlagImage} w="2.5rem" h="2.5rem" objectFit="fill" />
                                         </Box>
                                     </Flex>
                                 </Flex>
                             </Flex>
                         </GridItem>
+                        ))}
+
                     </Grid>
                 </Flex>
             </>
