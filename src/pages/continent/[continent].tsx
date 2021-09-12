@@ -50,8 +50,6 @@ export default function Continent () {
                 <Flex 
                     as="section"
                     w="100%" 
-                w="100%" 
-                    w="100%" 
                     mx="auto"
                     my={["1.5rem","2rem"]}>
                     
