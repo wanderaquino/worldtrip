@@ -1,6 +1,8 @@
 import Head from "next/head"
 import {Flex, Img, Box, Heading, Text, Grid, GridItem, useBreakpointValue}from "@chakra-ui/react";
 import { Header } from "../../components/Header"
+import { GetStaticPaths, GetStaticProps } from "next";
+import { api } from "../../services/api";
 
 
 interface ContinentProps {
@@ -244,4 +246,35 @@ export default function Continent ({continent} : ContinentProps) {
         )}
     </>
     )
+}
+
+export const getStaticPaths : GetStaticPaths = async () => {
+    const continents = await api.get("/continents");
+    const continentPaths = continents.data.map(continent => {
+        return {params: {continent: continent.id}}
+    });
+
+    return {
+        paths: continentPaths,
+        fallback: true
+    }
+}
+
+export const getStaticProps : GetStaticProps = async ({params}) => {
+    const continentResponse = await api.get(`/continents/${params.continent}`).then(response => response.data);
+
+    const continent = {
+        id: continentResponse.id,
+        name: continentResponse.name,
+        image: continentResponse.image,
+        about: continentResponse.about,
+        demographicData: continentResponse.demographicData,
+        cities: continentResponse.cities
+    }
+
+    return {
+        props: {
+            continent: continent
+        }
+    }
 }
