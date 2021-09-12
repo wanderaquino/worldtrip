@@ -22,23 +22,28 @@ export default function Continent () {
                 h="20rem"
                 mx="auto"
                 position="relative"
-                display="flex"
                 alignItems="center"
-                justifyContent="center"
-                >
-                <Box w="inherit" h="inherit" bg="rgb(0,0,0, 0.6)" position="absolute"/>
-                <Img w="inherit" maxW="inherit" h="inherit" src="/images/Europe.jpg" objectFit="cover"/>
-                <Box
+                justifyContent="center">
+
+                <Box w="100%" h="100%" bg="rgb(0,0,0, 0.6)" position="absolute"/>
+                <Img w="100%" maxW="inherit" h="100%" src="/images/Europe.jpg" objectFit="cover"/>
+                <Flex 
+                    w="100%" 
+                    h="100%" 
+                    px={["1rem", "5rem"]}
+                    py={["0", "2.5rem"]}
                     position="absolute" 
-                    px={["1rem", "3rem"]}
-                    >
-                    <Heading
-                        color="white"
-                        fontWeight="700"
-                        fontSize="2rem"
-                        >Europa
-                    </Heading>
-                </Box>
+                    alignItems="center"
+                    justifyContent="center">
+                    <Box>
+                        <Heading
+                            color="white"
+                            fontWeight="700"
+                            fontSize="2rem"
+                            >Europa
+                        </Heading>
+                    </Box>
+                </Flex>
             </Flex>
             ) : (
             <Flex
@@ -47,20 +52,24 @@ export default function Continent () {
                 mx="auto"
                 position="relative"
                 >
-                <Box w="inherit" h="inherit" bg="rgb(0,0,0, 0.6)" position="absolute"/>
-                <Img w="inherit" maxW="inherit" h="inherit" src="/images/Europe.jpg" objectFit="cover"/>
-                <Box
+                <Box w="100%" h="100%" bg="rgb(0,0,0, 0.6)" position="absolute"/>
+                <Img w="100%" maxW="inherit" h="100%" src="/images/Europe.jpg" objectFit="cover"/>
+                <Flex 
+                    w="100%" 
+                    h="100%" 
+                    px={["1rem", "5rem"]}
+                    py={["0", "2.5rem"]}
                     position="absolute" 
-                    px={["1rem", "3rem"]}
-                    bottom={10}
-                    >
-                    <Heading
-                        color="white"
-                        fontWeight="700"
-                        fontSize="2rem"
-                        >Europa
-                    </Heading>
-                </Box>
+                    alignItems="flex-end">
+                    <Box>
+                        <Heading
+                            color="white"
+                            fontWeight="700"
+                            fontSize="2rem"
+                            >Europa
+                        </Heading>
+                    </Box>
+                </Flex>
             </Flex>
             )
         }
@@ -73,7 +82,7 @@ export default function Continent () {
             >
             
             <Flex
-                px={["1rem", "3rem"]}>
+                px={["1rem", "5rem"]}>
                 
                 <Grid templateColumns="repeat(2, 1fr)" gridColumnGap={5}>
                     <GridItem colSpan={1} my="auto">
@@ -103,7 +112,7 @@ export default function Continent () {
                 </Grid>
             </Flex>
         </Flex>
-        <Flex as="section" px={["1rem", "3rem"]} flexDir="column" my="1.5rem">
+        <Flex as="section" px={["1rem", "5rem"]} flexDir="column" my="1.5rem">
             <Heading fontSize="2rem" fontWeight="600">Cidades +100</Heading>
             <Grid my="1.5rem" templateColumns="repeat(4, 1fr)" gap={5} >
                 <GridItem>
