@@ -4,7 +4,7 @@ import continents from "../../../../db.json"
 export default function Continents (request : NextApiRequest, response: NextApiResponse) {
     const queryId = request.query.id;
     const continent = continents.find(
-        continent => continent.id.toString() === queryId
+        continent => continent.id === queryId
     );
 
     if(request.method === "GET") {
