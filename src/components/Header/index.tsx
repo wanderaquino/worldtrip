@@ -14,18 +14,16 @@ export function Header ({isContinentPage = false} : HeaderProps) {
         
         <Flex 
             as="header" 
-            w="100%" 
-            maxW="1440px" 
+            w="100%"  
             align="center" 
             marginX="auto"
-            justify="flex-start"
             height="4rem"
-            px={["1rem", "5rem"]}
-            >
-                <Box flex={.7}>
+            px={["1rem", "5rem"]}>
+                
+                <Box justifySelf="flex-start" position="absolute">
                     <PreviousButton />
                 </Box>
-                <Box flex={1}>
+                <Box mx="auto">
                     <Logo /> 
                 </Box>
         </Flex>) 
@@ -35,7 +33,6 @@ export function Header ({isContinentPage = false} : HeaderProps) {
         <Flex 
                 as="header" 
                 w="100%" 
-                maxW="760px" 
                 alignItems="center" 
                 justifyContent="center"
                 marginX="auto"
