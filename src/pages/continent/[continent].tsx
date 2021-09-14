@@ -34,7 +34,6 @@ export default function Continent ({continent} : ContinentProps) {
         lg: true
     });
 
-    const router = useRouter();
     
     return (
     <>
@@ -42,13 +41,6 @@ export default function Continent ({continent} : ContinentProps) {
             <title>WorldTrip | {`${continent.name}`}</title>
         </Head>
         <Header isContinentPage={true}/>
-
-        {router.isFallback && (
-        <div>
-          <VscLoading color="#BBBBBB" size="20px"></VscLoading>
-          Carregando...
-        </div>
-      )}
 
         {
             !isWideScreen ? (
