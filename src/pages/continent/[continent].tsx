@@ -3,7 +3,8 @@ import {Flex, Img, Box, Heading, Text, Grid, GridItem, useBreakpointValue}from "
 import { Header } from "../../components/Header"
 import { GetStaticPaths, GetStaticProps } from "next";
 import { api } from "../../services/api";
-
+import { useRouter } from "next/dist/client/router";
+import {VscLoading} from "react-icons/vsc";
 
 interface ContinentProps {
     continent: {
@@ -32,6 +33,8 @@ export default function Continent ({continent} : ContinentProps) {
         base: false,
         lg: true
     });
+
+    const router = useRouter();
     
     return (
     <>
@@ -39,6 +42,13 @@ export default function Continent ({continent} : ContinentProps) {
             <title>WorldTrip | {`${continent.name}`}</title>
         </Head>
         <Header isContinentPage={true}/>
+
+        {router.isFallback && (
+        <div>
+          <VscLoading color="#BBBBBB" size="20px"></VscLoading>
+          Carregando...
+        </div>
+      )}
 
         {
             !isWideScreen ? (
