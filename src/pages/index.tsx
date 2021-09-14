@@ -6,6 +6,7 @@ import { PageDivider } from "../components/PageDivider";
 import { TravelTypesSection } from "../components/TravelTypesSection";
 import { api } from "../services/api";
 import ContinentSwiper from "../components/ContinentsSwiper";
+import { GetStaticProps } from "next";
 
 
 interface HomeContinentProps {
@@ -38,7 +39,7 @@ export default function Home({continents}: HomeContinentProps) {
   )
 }
 
-export async function getStaticProps<GetStaticProps> () {
+export const getStaticProps : GetStaticProps = async () => {
   const continentData = await api.get("/continents").then(response => response.data);
   return {
     props: {
