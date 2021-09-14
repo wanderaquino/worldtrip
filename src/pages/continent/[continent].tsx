@@ -271,7 +271,7 @@ export const getStaticPaths : GetStaticPaths = async () => {
 
     return {
         paths: continentPaths,
-        fallback: true
+        fallback: false
     }
 }
 
